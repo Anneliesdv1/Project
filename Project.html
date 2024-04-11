@@ -1,0 +1,70 @@
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Annelies De Vadder - Software Development Student</title>
+        <link rel="stylesheet" href="project.css">
+    </head>
+    <body>
+        <script src="project.js"></script>
+        <header>
+            <div class="navbar_container">
+                <h2>Annelies De Vadder</h2>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="#" id="navHome" onclick="navHome()">Home</a></li>
+                        <li><a href="#" id="navAbout" onclick="navAbout()">About</a></li>
+                        <li><a href="#" id="navPort" onclick="navPort()">Portfolio</a></li>
+                        <li><a href="#" id="navContact" onclick="navContact()">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="home" id="home">
+                <img src="https://i.imgur.com/Zm2YMbM.jpeg">
+                <h1>Hi! I'm <span>Annelies</span>,</h1><br>
+                <p>a student for front-end <span>web development</span><br>
+                    who is passionate about creating <span>interactive<br>applications</span>
+                    and experiences on the web.</p><br><br>
+                <input type="button" value="Contact Me" class="button" onclick="contactButton()">
+            </div>
+            <div class="aboutMe" id="aboutMe">
+                <h1>About Me</h1>
+                <img src="https://www.zdnet.com/a/img/resize/0a6b0be2f543ddbf313fc83a706b807b77c3c202/2021/07/19/8a337c80-5ed6-43a1-98fb-b981d420890f/programming-languages-shutterstock-1680857539.jpg?auto=webp&fit=crop&height=900&width=1200">
+                <p>Originally from Belgium, now located in Calgary, Canada.<br>
+                    I have always had a passion for music and technology. I completed a Bachelor of Music degree 
+                    with interest in composing and teaching at the University of Calgary.<br><br>
+                    Now, I am pursuing a Software Development diploma at Bow Valley College, where I am learning
+                    to work with Javascript, NodeJS, REACT, HTML, CSS, C++, C#, SQL, and Unreal engine 5.</p>
+            </div>
+            <div class="portfolio" id="portfolio">
+                <h1>Portfolio</h1>
+                <h4>Links to some of my school projects:</h4>
+                <ul>
+                    <li><a href="file:///C:/Users/annel/Desktop/BVC/Tech1101/Assignments/2/lyrics.html">
+                        <img src="https://i.imgur.com/4VxaRui.jpeg">
+                        <br><br>Lyrics Website</li>
+                    <li><a href="file:///C:/Users/annel/Desktop/BVC/Tech1101/Assignments/3/Assign3.html">
+                        <img src="https://i.imgur.com/QC6HkOx.jpeg">
+                        <br><br>Cashier Calculator</li>
+                    <li><a href="file:///C:/Users/annel/Desktop/BVC/Tech1101/Assignments/GLA%203/gla3.html">
+                        <img src="https://i.imgur.com/zlHSfDn.jpeg">
+                        <br><br>Connect 3 Game</a></li>
+                </ul>
+            </div>
+            <div class="contactMe" id="contactMe">
+                <h1>Contact Me</h1>
+                <p>Fill out the form below and I will get back to you through phone or email as soon as possible!</p><br>
+                <form method="post" action="script_url" onsubmit="emailSend(); reset(); return false;">
+                    <fieldset>
+                        <input type="text" placeholder="Name" id="name" required><br>
+                        <input type="email" placeholder="Email" id="email" required><br>
+                        <input type="tel" placeholder="Phone Number" id="phone" required><br>
+                        <textarea name="inquiry" id="inquiry" rows="5" cols="40" placeholder="Please type your inquiry here..." id="inquiry" required></textarea>
+                    </fieldset><br>
+                    <button type="submit" class="sendButton" onclick="sendButton()">Send</button>
+                </form>
+            </div>
+            <script src="https://smtpjs.com/v3/smtp.js">
+            </script>
+        </header>
+    </body>
+</html>
